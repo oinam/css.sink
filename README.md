@@ -9,9 +9,4 @@ _Work-in-Progress. Not a Release Candidate._
 
 ## License
 
-MIT
-
-### TODO
-
-[] Typography - Modular Scale
-[] Vertical Rhythm
+MIT.
