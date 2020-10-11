@@ -79,6 +79,8 @@
   --font-family-monospace: Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
 
   /* SPACING */
+  --space-base: var(--text-size-base);
+  --space-smaller: calc(var(--space-base) / var(--ratio));
 }
 
 *, ::before, ::after {
@@ -94,7 +96,7 @@
 
 html {
   cursor: default;
-  word-break: break-all;
+  word-break: break-word;
 }
 
 body {
@@ -122,17 +124,21 @@ a:hover {
 
 pre, code {
   font-family: var(--font-family-monospace);
+  font-size: var(--text-sm);
 }
 
 pre {
   background: var(--color-gray-1);
-  padding: 1em;
-  overflow: auto
+  padding: var(--space-base);
+  overflow: auto;
 }
 
 blockquote {
-  padding: 1em;
+  overflow: auto;
   margin: 0;
+  padding: var(--space-smaller) var(--space-base);
+  background: var(--color-gray-1);
+  border-left: 7px solid var(--color-gray-2);
 }
 
 small {
