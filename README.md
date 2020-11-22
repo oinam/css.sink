@@ -7,6 +7,10 @@ _Work-in-Progress. Not a Release Candidate._
 - [DEMO](https://oinam.github.io/css-zero/)
 - [Source](https://github.com/oinam/css-zero)
 
+## Features
+
+- Modular Scale Typography.
+
 ## Usage
 
 Direcly from [jsDelivr](https://www.jsdelivr.com)
@@ -18,6 +22,8 @@ Latest File
 Specific Version
 
 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oinam/css-zero@0.0.1/css-zero.min.css">`
+
+or Copy & Edit to roll your own.
 
 ## License
 
