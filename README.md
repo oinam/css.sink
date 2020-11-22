@@ -21,7 +21,7 @@ Latest File
 
 Specific Version
 
-`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oinam/css-zero@0.0.1/css-zero.min.css">`
+`<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/oinam/css-zero@1/css-zero.min.css">`
 
 or Copy & Edit to roll your own.
 
