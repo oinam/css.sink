@@ -10,178 +10,187 @@
 
 <link rel="stylesheet" href="css-zero.css">
 
-<!--
-  Decorative Demo Styles done just for this website.
-  Not needed for your work.
--->
-<style type="text/css">
-  body {
-    width: 65ch;
-    margin: auto;
-  }
-</style>
-
 </head>
 <body>
 
   <header>
     <h1>CSS Zero</h1>
+
     <blockquote>
       <p>A simple bare-bone classless CSS defaults.</p>
     </blockquote>
   </header>
 
-  <section>
-    <h2>Typography</h2>
+  <main>
+
+    <hgroup>
+      <h1>h1. Heading <small>Secondary text</small></h1>
+      <h2>h2. Heading <small>Secondary text</small></h2>
+      <h3>h3. Heading <small>Secondary text</small></h3>
+      <h4>h4. Heading <small>Secondary text</small></h4>
+      <h5>h5. Heading <small>Secondary text</small></h5>
+      <h6>h6. Heading <small>Secondary text</small></h6>
+    </hgroup>
+
+    <article>
+      <p>
+        The Lord of the Rings is an epic high fantasy novel by the English author and scholar JRR Tolkien. Set in Middle-earth, the world at some distant time in the past, the story began as a sequel to Tolkien's <del>1837</del> 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, <strong>The Lord of the Rings</strong> is one of the <em>best-selling books</em> ever written, with over 150 million copies sold.
+      </p>
+
+      <figure>
+        <img src="lotr-middle-earth-map.jpg" alt="The Lord of the Rings - Map of Middle Earth">
+        <figcaption>
+          The Lord of the Rings - Map of Middle Earth.
+        </figcaption>
+      </figure>
+
+      <p>
+        An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it. However, he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir, and his three Hobbit friends Merry, Pippin, and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign.
+      </p>
+
+      <blockquote>
+        <p>
+          “I don’t know half of you half as well as I should like; and I like less than half of you half as well as you deserve.”
+        </p>
+        <cite>Bilbo Baggins</cite>
+      </blockquote>
+    <article>
+
+    <h2>Ring Bearers</h2>
+    <h3>The One Ring</h3>
+    <ol>
+      <li>Sauron</li>
+      <li>Isildur</li>
+      <li>Déagol</li>
+      <li>Sméagol (Gollum)</li>
+      <li>Bilbo Baggins</li>
+      <li>Gandalf</li>
+      <li>Frodo Baggins</li>
+      <li>Samwise Gamgee</li>
+    </ol>
+
+    <h3>The Other Rings</h3>
+    <ul>
+      <li>The Three Rings (of Elves)
+        <ul>
+          <li>Galadriel (Nenya)</li>
+          <li>Gil-galad (Vilya, Narya)</li>
+          <li>Elrond (Vilya)</li>
+          <li>Círdan (Narya)</li>
+          <li>Gandalf (Narya)</li>
+        </ul>
+      </li>
+      <li>The Nine Rings (given to Men)
+        <ul>
+          <li>The Witch-king of Angmar</li>
+          <li>Khamûl</li>
+          <li>Seven unnamed Ringwraiths</li>
+        </ul>
+      </li>
+      <li>The Seven Rings (given to the Dwarves)
+        <ul>
+          <li>Celebrimbor</li>
+          <li>Durin III</li>
+          <li>10 Kings</li>
+          <li>Thrór</li>
+          <li>Thráin II</li>
+          <li>Six other dwarf-lords</li>
+          <li>Dragons</li>
+          <li>Sauron</li>
+        </ul>
+      </li>
+    </ul>
+
+    <pre>
+      body {
+        margin: auto;
+        padding: 1rem;
+        color: rgb(0, 0, 0);
+      }
+    </pre>
+
+    <hr>
+
+    <h4>Tables</h4>
+
+    <table summary="Caption for the Table">
+      <caption>Caption for the Table</caption>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Meta</th>
+          <th>Note</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td>-------</td>
+          <td>-------</td>
+          <td>-------</td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <tr>
+          <td>Foo Bar</td>
+          <td>asded</td>
+          <td>jkl;</td>
+        </tr>
+        <tr>
+          <td>qwert</td>
+          <td>yuiop</td>
+          <td>< + ></td>
+        </tr>
+      <tbody>
+    </table>
+
+    <hr>
+
+    <h3>Forms</h3>
+
+    <form>
+      <label for="Name">Name</label>
+      <input id="Name" type="text" name="Name">
+
+      <label for="City">Family</label>
+      <input id="City" type="text" name="Family">
+
+      <label for="Email">Email</label>
+      <input id="Email" type="text" name="Email">
+
+      <label for="Message">Message</label>
+      <textarea id="Message" name="Message"></textarea>
+
+      <label>Select label</label>
+      <select id="lorem" name="Lorem ipsum">
+        <option selected="selected" value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <option value="4">Four</option>
+        <option value="5">Five</option>
+      </select>
+
+      <label>Number</label>
+      <input type="radio" name="radioSet" value="uno">Option One
+      <input type="radio" name="radioSet" value="due">Option Two
+      <input type="radio" name="radioSet" value="tre">Option Three
+
+      <button>Button</button>
+
+      <input type="button" value="Input Button">
+      <input type="submit" value="Input Submit">
+      <input type="reset" value="Input Reset">
+    </form>
+  </main>
+
+  <hr>
+
+  <footer>
     <p>
-      “A modular scale is a sequence of numbers that relate to one another in a meaningful way.”
-      <a href="http://webtypography.net/">The Elements of Typographic Style Applied to the Web</a>
-      <a href="http://webtypography.net/3.1.1">modular scale</a>
+      <small>
+        <a href="//oinam.github.io/css-zero/">CSS-Zero</a>, <a href="//github.com/oinam/css-zero">Open Source</a>. License - MIT.
+      </small>
     </p>
-  </section>
-
-
-  <h1>h1. Heading <small>Secondary text</small></h1>
-  <h2>h2. Heading <small>Secondary text</small></h2>
-  <h3>h3. Heading <small>Secondary text</small></h3>
-  <h4>h4. Heading <small>Secondary text</small></h4>
-  <h5>h5. Heading <small>Secondary text</small></h5>
-  <h6>h6. Heading <small>Secondary text</small></h6>
-
-  <p>
-    The Lord of the Rings is an epic high fantasy novel by the English author and scholar JRR Tolkien. Set in Middle-earth, the world at some distant time in the past, the story began as a sequel to Tolkien's <del>1837</del> 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, <strong>The Lord of the Rings</strong> is one of the <em>best-selling books</em> ever written, with over 150 million copies sold.
-  </p>
-
-  <p>
-    An ancient Ring thought lost for centuries has been found, and through a strange twist of fate has been given to a small Hobbit named Frodo. When Gandalf discovers the Ring is in fact the One Ring of the Dark Lord Sauron, Frodo must make an epic quest to the Cracks of Doom in order to destroy it. However, he does not go alone. He is joined by Gandalf, Legolas the elf, Gimli the Dwarf, Aragorn, Boromir, and his three Hobbit friends Merry, Pippin, and Samwise. Through mountains, snow, darkness, forests, rivers and plains, facing evil and danger at every corner the Fellowship of the Ring must go. Their quest to destroy the One Ring is the only hope for the end of the Dark Lords reign.
-  </p>
-
-  <blockquote>
-    <p>
-      “I don’t know half of you half as well as I should like; and I like less than half of you half as well as you deserve.”
-    </p>
-    <cite>Bilbo Baggins</cite>
-  </blockquote>
-
-  <h2>Ring Bearers</h2>
-  <h3>The One Ring</h3>
-  <ol>
-    <li>Sauron</li>
-    <li>Isildur</li>
-    <li>Déagol</li>
-    <li>Sméagol (Gollum)</li>
-    <li>Bilbo Baggins</li>
-    <li>Gandalf</li>
-    <li>Frodo Baggins</li>
-    <li>Samwise Gamgee</li>
-  </ol>
-
-  <h3>The Other Rings</h3>
-  <ul>
-    <li>The Three Rings (of Elves)
-      <ul>
-        <li>Galadriel (Nenya)</li>
-        <li>Gil-galad (Vilya, Narya)</li>
-        <li>Elrond (Vilya)</li>
-        <li>Círdan (Narya)</li>
-        <li>Gandalf (Narya)</li>
-      </ul>
-    </li>
-    <li>The Nine Rings (given to Men)
-      <ul>
-        <li>The Witch-king of Angmar</li>
-        <li>Khamûl</li>
-        <li>Seven unnamed Ringwraiths</li>
-      </ul>
-    </li>
-    <li>The Seven Rings (given to the Dwarves)
-      <ul>
-        <li>Celebrimbor</li>
-        <li>Durin III</li>
-        <li>10 Kings</li>
-        <li>Thrór</li>
-        <li>Thráin II</li>
-        <li>Six other dwarf-lords</li>
-        <li>Dragons</li>
-        <li>Sauron</li>
-      </ul>
-    </li>
-  </ul>
-
-  <pre>
-    body {
-      margin: auto;
-      padding: 1rem;
-      color: rgb(0, 0, 0);
-    }
-  </pre>
-
-  <h4>Tables</h4>
-
-  <table summary="Caption for the Table">
-    <caption>Caption for the Table</caption>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Meta</th>
-        <th>Note</th>
-      </tr>
-    </thead>
-    <tfoot>
-      <tr>
-        <td>-------</td>
-        <td>-------</td>
-        <td>-------</td>
-      </tr>
-    </tfoot>
-    <tbody>
-      <tr>
-        <td>Foo Bar</td>
-        <td>asded</td>
-        <td>jkl;</td>
-      </tr>
-      <tr>
-        <td>qwert</td>
-        <td>yuiop</td>
-        <td>< + ></td>
-      </tr>
-    <tbody>
-  </table>
-
-  <h3>Forms</h3>
-  <form>
-    <label for="Name">Name</label>
-    <input id="Name" type="text" name="Name">
-
-    <label for="City">Family</label>
-    <input id="City" type="text" name="Family">
-
-    <label for="Email">Email</label>
-    <input id="Email" type="text" name="Email">
-
-    <label for="Message">Message</label>
-    <textarea id="Message" name="Message"></textarea>
-
-    <label>Select label</label>
-    <select id="lorem" name="Lorem ipsum">
-      <option selected="selected" value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
-      <option value="4">Four</option>
-      <option value="5">Five</option>
-    </select>
-
-    <label>Number</label>
-    <input type="radio" name="radioSet" value="uno">Option One
-    <input type="radio" name="radioSet" value="due">Option Two
-    <input type="radio" name="radioSet" value="tre">Option Three
-
-    <button>Button</button>
-
-    <input type="button" value="Input Button">
-    <input type="submit" value="Input Submit">
-    <input type="reset" value="Input Reset">
-  </form>
+  </footer>
 
 </body>
 </html>

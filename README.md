@@ -21,4 +21,4 @@ Specific Version
 
 ## License
 
-MIT.
+MIT
