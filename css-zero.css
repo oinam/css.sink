@@ -42,53 +42,127 @@
   --space-half: calc(var(--base-em) / 2);
   --space-quarter: calc(var(--base-em) / 4);
   --space-double: calc(var(--base-em) * 2);
+
+  /* text-size */
+  --text-normal: calc(var(--base-em) * var(--ms0));
+  --text-lg: calc(var(--base-em) * var(--ms1));
+  --text-xl: calc(var(--base-em) * var(--ms2));
+  --text-md: calc(var(--base-em) / var(--ms1));
+  --text-sm: calc(var(--base-em) / var(--ms2));
+  --text-xs: calc(var(--base-em) / var(--ms3));
 }
 
 :root {
-  /* color */
-    
+  /* color-grays */
+  --color-gray-1: #fafafa;
+  --color-gray-2: #f4f4f5;
+  --color-gray-3: #e4e4e7;
+  --color-gray-4: #d4d4d8;
+  --color-gray-5: #a1a1aa;
+  --color-gray-6: #71717a;
+  --color-gray-7: #52525b;
+  --color-gray-8: #3f3f46;
+  --color-gray-9: #27272a;
+  --color-gray-10: #18181b;
+
+  --color-graywarm-1: #fafaf9;
+  --color-graywarm-2: #f5f5f4;
+  --color-graywarm-3: #e7e5e4;
+  --color-graywarm-4: #d6d3d1;
+  --color-graywarm-5: #a8a29e;
+  --color-graywarm-6: #78716c;
+  --color-graywarm-7: #57534e;
+  --color-graywarm-8: #44403c;
+  --color-graywarm-9: #292524;
+  --color-graywarm-10: #1c1917;
+  
+  --color-graytrue-1: #fafafa;
+  --color-graytrue-2: #f5f5f5;
+  --color-graytrue-3: #e5e5e5;
+  --color-graytrue-4: #d4d4d4;
+  --color-graytrue-5: #a3a3a3;
+  --color-graytrue-6: #737373;
+  --color-graytrue-7: #525252;
+  --color-graytrue-8: #404040;
+  --color-graytrue-9: #262626;
+  --color-graytrue-10: #171717;
+  
+  --color-graycool-1: #f9fafb;
+  --color-graycool-2: #f3f4f6;
+  --color-graycool-3: #e5e7eb;
+  --color-graycool-4: #d1d5db;
+  --color-graycool-5: #9ca3af;
+  --color-graycool-6: #6b7280;
+  --color-graycool-7: #4b5563;
+  --color-graycool-8: #374151;
+  --color-graycool-9: #1f2937;
+  --color-graycool-10: #111827;
+  
+  --color-grayblue-1: #f8fafc;
+  --color-grayblue-2: #f1f5f9;
+  --color-grayblue-3: #e2e8f0;
+  --color-grayblue-4: #cbd5e1;
+  --color-grayblue-5: #94a3b8;
+  --color-grayblue-6: #64748b;
+  --color-grayblue-7: #475569;
+  --color-grayblue-8: #334155;
+  --color-grayblue-9: #1e293b;
+  --color-grayblue-10: #0f172a;
+
+  /* color */    
   --color-black: #000000;
   --color-white: #ffffff;
   --color-dark:  #222222;
   --color-light: #efefef;
 
-  --color-gray-10: #18181b;
-  --color-gray-9: #27272a;
-  --color-gray-8: #3f3f46;
-  --color-gray-7: #52525b;
-  --color-gray-6: #71717a;
-  --color-gray-5: #a1a1aa;
-  --color-gray-4: #d4d4d8;
-  --color-gray-3: #e4e4e7;
-  --color-gray-2: #f4f4f5;
-  --color-gray-1: #fafafa;
+  --color-primary:          #3b82f6;
+  --color-primary-light:    #93c5fd;
+  --color-primary-lighter:  #bfdbfe;
+  --color-primary-lightest: #eff6ff;
+  --color-primary-dark:     #2563eb;
+  --color-primary-darker:   #1d4ed8;
+  --color-primary-darkest:  #1e3a8a;
 
-  --color-graywarm-1: '#fafaf9';
-  --color-graywarm-2: '#f5f5f4';
-  --color-graywarm-3: '#e7e5e4';
-  --color-graywarm-4: '#d6d3d1';
-  --color-graywarm-5: '#a8a29e';
-  --color-graywarm-6: '#78716c';
-  --color-graywarm-7: '#57534e';
-  --color-graywarm-8: '#44403c';
-  --color-graywarm-9: '#292524';
-  --color-graywarm-10: '#1c1917';
+  --color-accent:          #22c55e;
+  --color-accent-light:    #4ade80;
+  --color-accent-lighter:  #bbf7d0;
+  --color-accent-lightest: #f0fdf4;
+  --color-accent-dark:     #16a34a;
+  --color-accent-darker:   #15803d;
+  --color-accent-darkest:  #14532d;
 
-  --color-primary:    rgb(11, 52, 110);
-  --color-secondary:  rgb(12, 72, 66);
-  --color-tertiary:   rgb(247, 92, 47);
-  --color-primary-accent:   rgb(155, 144, 194);
-  --color-secondary-accent: rgb(105, 176, 172);
-  --color-tertiary-accent:  rgb(254, 223, 225);
+  --color-success:          #84cc16;
+  --color-success-light:    #bef264;
+  --color-success-lighter:  #ecfccb;
+  --color-success-lightest: #f7fee7;
+  --color-success-dark:     #65a30d;
+  --color-success-darker:   #3f6212;
+  --color-success-darkest:  #365314;
 
+  --color-warning:          #eab308;
+  --color-warning-light:    #fde047;
+  --color-warning-lighter:  #fef08a;
+  --color-warning-lightest: #fefce8;
+  --color-warning-dark:     #ca8a04;
+  --color-warning-darker:   #a16207;
+  --color-warning-darkest:  #713f12;
+
+  --color-danger:          #f87171;
+  --color-danger-light:    #fca5a5;
+  --color-danger-lighter:  #fecaca;
+  --color-danger-lightest: #fef2f2;
+  --color-danger-dark:     #dc2626;
+  --color-danger-darker:   #b91c1c;
+  --color-danger-darkest:  #7f1d1d;
+  
   --text-color-primary:     #222;
   --text-color-secondary:   #222;
 }
 
 :root {
-  --font-family-sans:       'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  --font-family-serif:      'New Century Schoolbook', Garamond, Georgia, 'Times New Roman', Times, serif;
-  --font-family-monospace:  Consolas, monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
+  --font-family-sans:       system-ui, -apple-system, "Segoe UI", "Roboto", Ubuntu, Cantarell, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-serif:      et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+  --font-family-monospace:  Consolas, Monaco, 'Ubuntu Mono', 'Liberation Mono', 'Courier New', Courier, monospace;
 
   --border-radius: 3px;
 }
@@ -174,11 +248,11 @@ blockquote {
 }
 
 blockquote cite {
-  font-size: smaller;
+  font-size: var(--text-sm);
 }
 
 small {
-  font-size: 80%;
+  font-size: var(--text-xs);
 }
 
 sup {
@@ -212,6 +286,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
   margin: 1em 0
+}
+
+table caption {
+  text-align: right;
+  font-size: var(--text-sm);
 }
 
 th,
