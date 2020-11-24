@@ -155,8 +155,13 @@
   --color-danger-darker:   #b91c1c;
   --color-danger-darkest:  #7f1d1d;
   
-  --text-color-primary:     #222;
-  --text-color-secondary:   #222;
+  --text-color: #434c5e;
+  --text-color-dark: #3b4252;
+  --text-color-darker: #2e3440;
+  --text-color-darkest: #111;
+  
+  --text-color-link: #1d4ed8;
+  --text-color-link-hover: #3b82f6;
 }
 
 :root {
@@ -194,7 +199,7 @@ body {
   font-size: calc(var(--base-em) * var(--ms0));
   line-height: calc(var(--base) * var(--ms2));
 
-  color: var(--text-color-primary);
+  color: var(--text-color);
 }
 
 img,
@@ -217,11 +222,13 @@ figcaption {
   font-style: italic;
 }
 
-a {
+a, a:visited {
+  color: var(--text-color-link);
   text-decoration: none;
 }
 
-a:hover {
+a:hover, a:active {
+  color: var(--text-color-link-hover);
   text-decoration: underline;
 }
 
@@ -269,6 +276,10 @@ abbr[title] {
 }
 
 /* heading */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color-dark);
+}
+
 h6 { font-size: calc(var(--base-em) / var(--ms1)); }
 h5 { font-size: calc(var(--base-em) * var(--ms0)); }
 h4 { font-size: calc(var(--base-em) * var(--ms1)); }
@@ -277,8 +288,8 @@ h2 { font-size: calc(var(--base-em) * var(--ms3)); }
 h1 { font-size: calc(var(--base-em) * var(--ms4)); }
 
 h3,
-h2 { line-height: calc(var(--base) * var(--ms1)); }
-h1 { line-height: calc(var(--base) * var(--ms0)); }
+h2 { line-height: calc(var(--base) * var(--ms2)); }
+h1 { line-height: calc(var(--base) * var(--ms1)); }
 
 /* table */
 
