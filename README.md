@@ -2,7 +2,7 @@
 
 ```
 Work-in-Progress.
-__NOT a Release Candidate.__
+NOT a Release Candidate.
 ```
 
 ## Features
