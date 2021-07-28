@@ -1,0 +1,29 @@
+table {
+  display: block;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+caption {
+  font-weight: bold;
+}
+
+thead {
+  border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
+}
+
+tfoot {
+  border-top: calc(var(--border-width) * 2) solid var(--border-color);
+}
+
+thead > tr:not(:first-child),
+tbody > tr:not(:first-child),
+tfoot > tr:not(:first-child) {
+  border-top: var(--border-width) solid var(--border-color);
+}
+
+thead > tr:nth-child(even),
+tbody > tr:nth-child(even),
+tfoot > tr:nth-child(even) {
+  background-color: var(--highlighted-background-color);
+}

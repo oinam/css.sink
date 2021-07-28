@@ -3,19 +3,30 @@
 
 <head>
 <meta charset="utf-8">
-<title>CSS Zero</title>
+<title>CSS Sink</title>
 
 <meta name="description" content="A simple bare-bone classless CSS defaults.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="css-zero.css">
+<link rel="stylesheet" href="var-ratio.css">
+<link rel="stylesheet" href="var-color-gray.css">
+<link rel="stylesheet" href="var-color-nord.css">
+<link rel="stylesheet" href="var-color.css">
+<link rel="stylesheet" href="var-typography.css">
+
+<link rel="stylesheet" href="settings.css">
+
+<link rel="stylesheet" href="style-base.css">
+<link rel="stylesheet" href="style-form.css">
+<link rel="stylesheet" href="style-table.css">
+
+<link rel="stylesheet" href="tool-debug.css">
 
 </head>
 <body>
 
   <header>
-    <h1>CSS Zero</h1>
-
+    <h1>CSS Sink</h1>
     <blockquote>
       <p>A simple bare-bone classless CSS defaults.</p>
     </blockquote>
@@ -38,9 +49,10 @@
       </p>
 
       <figure>
-        <img src="lotr-middle-earth-map.jpg" alt="The Lord of the Rings - Map of Middle Earth">
+        <img src="/assets/lotr-middle-earth-map.jpg" alt="Middle Earth">
         <figcaption>
-          The Lord of the Rings - Map of Middle Earth.
+          Here goes the caption of the above image.
+          <cite>The Creator</cite>
         </figcaption>
       </figure>
 
@@ -54,245 +66,117 @@
         </p>
         <cite>Bilbo Baggins</cite>
       </blockquote>
-    <article>
+    </article>
 
-    <h2>Ring Bearers</h2>
-    <h3>The One Ring</h3>
-    <ol>
-      <li>Sauron</li>
-      <li>Isildur</li>
-      <li>Déagol</li>
-      <li>Sméagol (Gollum)</li>
-      <li>Bilbo Baggins</li>
-      <li>Gandalf</li>
-      <li>Frodo Baggins</li>
-      <li>Samwise Gamgee</li>
-    </ol>
+    <img src="/assets/color-theme-nord.png" alt="Nord Color Theme">
 
-    <h3>The Other Rings</h3>
-    <ul>
-      <li>The Three Rings (of Elves)
-        <ul>
-          <li>Galadriel (Nenya)</li>
-          <li>Gil-galad (Vilya, Narya)</li>
-          <li>Elrond (Vilya)</li>
-          <li>Círdan (Narya)</li>
-          <li>Gandalf (Narya)</li>
-        </ul>
-      </li>
-      <li>The Nine Rings (given to Men)
-        <ul>
-          <li>The Witch-king of Angmar</li>
-          <li>Khamûl</li>
-          <li>Seven unnamed Ringwraiths</li>
-        </ul>
-      </li>
-      <li>The Seven Rings (given to the Dwarves)
-        <ul>
-          <li>Celebrimbor</li>
-          <li>Durin III</li>
-          <li>10 Kings</li>
-          <li>Thrór</li>
-          <li>Thráin II</li>
-          <li>Six other dwarf-lords</li>
-          <li>Dragons</li>
-          <li>Sauron</li>
-        </ul>
-      </li>
-    </ul>
+    <section>
+      <h2>Ring Bearers</h2>
+      <h3>The One Ring</h3>
+      <ol>
+        <li>Sauron</li>
+        <li>Isildur</li>
+        <li>Déagol</li>
+        <li>Sméagol (Gollum)</li>
+        <li>Bilbo Baggins</li>
+        <li>Gandalf</li>
+        <li>Frodo Baggins</li>
+        <li>Samwise Gamgee</li>
+      </ol>
 
-    <pre>
-      Roads go ever on,
-      Over rock and under tree,
-      By caves where never sun has shone,
-      By streams that never find the sea;
-      Over snow by winter sown,
-      And through the merry flowers of June,
-      Over grass and over stone,
-      And under mountains in the moon.
+      <hr>
 
-      Roads go ever on
-      Under cloud and under star,
-      Yet feet that wandering have gone
-      Turn at last to home afar.
-      Eyes that fire and sword have seen
-      And horror in the halls of stone
-      Look at last on meadows green
-      And trees and hills they long have known
-    </pre>
+      <h3>The Other Rings</h3>
+      <ul>
+        <li>The Three Rings (of Elves)
+          <ul>
+            <li>Galadriel (Nenya)</li>
+            <li>Gil-galad (Vilya, Narya)</li>
+            <li>Elrond (Vilya)</li>
+            <li>Círdan (Narya)</li>
+            <li>Gandalf (Narya)</li>
+          </ul>
+        </li>
+        <li>The Nine Rings (given to Men)
+          <ul>
+            <li>The Witch-king of Angmar</li>
+            <li>Khamûl</li>
+            <li>Seven unnamed Ringwraiths</li>
+          </ul>
+        </li>
+        <li>The Seven Rings (given to the Dwarves)
+          <ul>
+            <li>Celebrimbor</li>
+            <li>Durin III</li>
+            <li>10 Kings</li>
+            <li>Thrór</li>
+            <li>Thráin II</li>
+            <li>Six other dwarf-lords</li>
+            <li>Dragons</li>
+            <li>Sauron</li>
+          </ul>
+        </li>
+      </ul>
 
-    <h4>Color</h4>
+      <pre>
+        Roads go ever on,
+        Over rock and under tree,
+        By caves where never sun has shone,
+        By streams that never find the sea;
+        Over snow by winter sown,
+        And through the merry flowers of June,
+        Over grass and over stone,
+        And under mountains in the moon.
 
-    <table summary="Color - Gray">
-      <caption>Gray Color Table</caption>
-      <tbody>
-        <tr>
-          <th>Gray</th>
-          <td style="background: var(--color-gray-1)">gray-1</td>
-          <td style="background: var(--color-gray-2)">gray-2</td>
-          <td style="background: var(--color-gray-3)">gray-3</td>
-          <td style="background: var(--color-gray-4)">gray-4</td>
-          <td style="background: var(--color-gray-5)">gray-5</td>
-          <td style="background: var(--color-gray-6)">gray-6</td>
-          <td style="background: var(--color-gray-7)">gray-7</td>
-          <td style="background: var(--color-gray-8)">gray-8</td>
-          <td style="background: var(--color-gray-9)">gray-9</td>
-          <td style="background: var(--color-gray-10)">gray-10</td>
-        </tr>
-        <tr>
-          <th>Gray (Warm)</th>
-          <td style="background: var(--color-graywarm-1)">graywarm-1</td>
-          <td style="background: var(--color-graywarm-2)">graywarm-2</td>
-          <td style="background: var(--color-graywarm-3)">graywarm-3</td>
-          <td style="background: var(--color-graywarm-4)">graywarm-4</td>
-          <td style="background: var(--color-graywarm-5)">graywarm-5</td>
-          <td style="background: var(--color-graywarm-6)">graywarm-6</td>
-          <td style="background: var(--color-graywarm-7)">graywarm-7</td>
-          <td style="background: var(--color-graywarm-8)">graywarm-8</td>
-          <td style="background: var(--color-graywarm-9)">graywarm-9</td>
-          <td style="background: var(--color-graywarm-10)">graywarm-10</td>
-        </tr>
-        <tr>
-          <th>Gray (True)</th>
-          <td style="background: var(--color-graytrue-1)">graytrue-1</td>
-          <td style="background: var(--color-graytrue-2)">graytrue-2</td>
-          <td style="background: var(--color-graytrue-3)">graytrue-3</td>
-          <td style="background: var(--color-graytrue-4)">graytrue-4</td>
-          <td style="background: var(--color-graytrue-5)">graytrue-5</td>
-          <td style="background: var(--color-graytrue-6)">graytrue-6</td>
-          <td style="background: var(--color-graytrue-7)">graytrue-7</td>
-          <td style="background: var(--color-graytrue-8)">graytrue-8</td>
-          <td style="background: var(--color-graytrue-9)">graytrue-9</td>
-          <td style="background: var(--color-graytrue-10)">graytrue-10</td>
-        </tr>
-        <tr>
-          <th>Gray (Cool)</th>
-          <td style="background: var(--color-grayblue-1)">graycool-1</td>
-          <td style="background: var(--color-grayblue-2)">graycool-2</td>
-          <td style="background: var(--color-grayblue-3)">graycool-3</td>
-          <td style="background: var(--color-grayblue-4)">graycool-4</td>
-          <td style="background: var(--color-grayblue-5)">graycool-5</td>
-          <td style="background: var(--color-grayblue-6)">graycool-6</td>
-          <td style="background: var(--color-grayblue-7)">graycool-7</td>
-          <td style="background: var(--color-grayblue-8)">graycool-8</td>
-          <td style="background: var(--color-grayblue-9)">graycool-9</td>
-          <td style="background: var(--color-grayblue-10)">graycool-10</td>
-        </tr>
-        <tr>
-          <th>Gray (Blue)</th>
-          <td style="background: var(--color-grayblue-1)">grayblue-1</td>
-          <td style="background: var(--color-grayblue-2)">grayblue-2</td>
-          <td style="background: var(--color-grayblue-3)">grayblue-3</td>
-          <td style="background: var(--color-grayblue-4)">grayblue-4</td>
-          <td style="background: var(--color-grayblue-5)">grayblue-5</td>
-          <td style="background: var(--color-grayblue-6)">grayblue-6</td>
-          <td style="background: var(--color-grayblue-7)">grayblue-7</td>
-          <td style="background: var(--color-grayblue-8)">grayblue-8</td>
-          <td style="background: var(--color-grayblue-9)">grayblue-9</td>
-          <td style="background: var(--color-grayblue-10)">grayblue-10</td>
-        </tr>
-      </tbody>
-    </table>
+        Roads go ever on
+        Under cloud and under star,
+        Yet feet that wandering have gone
+        Turn at last to home afar.
+        Eyes that fire and sword have seen
+        And horror in the halls of stone
+        Look at last on meadows green
+        And trees and hills they long have known
+      </pre>
+    </section>
 
-    <table summary="Primary Color">
-      <caption>Primary Color</caption>
-      <tbody>
-        <tr>
-          <th>Primary Color</th>
-          <td style="background: var(--color-primary-lightest)">primary-lightest</td>
-          <td style="background: var(--color-primary-lighter)">primary-lighter</td>
-          <td style="background: var(--color-primary-light)">primary-light</td>
-          <td style="background: var(--color-primary)">primary</td>
-          <td style="background: var(--color-primary-dark)">primary-dark</td>
-          <td style="background: var(--color-primary-darker)">primary-darker</td>
-          <td style="background: var(--color-primary-darkest)">primary-darkest</td>
-        </tr>
-      </tbody>
-    </table>
+    <section>
+      <h3>Forms</h3>
 
-    <h5>Accent Color</h5>
+      <form>
+        <label for="Name">Name</label>
+        <input id="Name" type="text" name="Name">
 
-    <table summary="Accent Color">
-      <caption>Accent Color</caption>
-      <tbody>
-        <tr>
-          <th>Accent Primary</th>
-          <td style="background: var(--color-accent-lightest)">accent-lightest</td>
-          <td style="background: var(--color-accent-lighter)">accent-lighter</td>
-          <td style="background: var(--color-accent-light)">accent-light</td>
-          <td style="background: var(--color-accent)">accent</td>
-          <td style="background: var(--color-accent-dark)">accent-dark</td>
-          <td style="background: var(--color-accent-darker)">accent-darker</td>
-          <td style="background: var(--color-accent-darkest)">accent-darkest</td>
-        </tr>
-        <tr>
-          <th>Success</th>
-          <td style="background: var(--color-success-lightest)">success-lightest</td>
-          <td style="background: var(--color-success-lighter)">success-lighter</td>
-          <td style="background: var(--color-success-light)">success-light</td>
-          <td style="background: var(--color-success)">success</td>
-          <td style="background: var(--color-success-dark)">success-dark</td>
-          <td style="background: var(--color-success-darker)">success-darker</td>
-          <td style="background: var(--color-success-darkest)">success-darkest</td>
-        </tr>
-        <tr>
-          <th>Warning</th>
-          <td style="background: var(--color-warning-lightest)">warning-lightest</td>
-          <td style="background: var(--color-warning-lighter)">warning-lighter</td>
-          <td style="background: var(--color-warning-light)">warning-light</td>
-          <td style="background: var(--color-warning)">warning</td>
-          <td style="background: var(--color-warning-dark)">warning-dark</td>
-          <td style="background: var(--color-warning-darker)">warning-darker</td>
-          <td style="background: var(--color-warning-darkest)">warning-darkest</td>
-        </tr>
-        <tr>
-          <th>Danger</th>
-          <td style="background: var(--color-danger-lightest)">danger-lightest</td>
-          <td style="background: var(--color-danger-lighter)">danger-lighter</td>
-          <td style="background: var(--color-danger-light)">danger-light</td>
-          <td style="background: var(--color-danger)">danger</td>
-          <td style="background: var(--color-danger-dark)">danger-dark</td>
-          <td style="background: var(--color-danger-darker)">danger-darker</td>
-          <td style="background: var(--color-danger-darkest)">danger-darkest</td>
-        </tr>
-      </tbody>
-    </table>
+        <label for="City">Family</label>
+        <input id="City" type="text" name="Family">
 
-    <h3>Forms</h3>
+        <label for="Email">Email</label>
+        <input id="Email" type="text" name="Email">
 
-    <form>
-      <label for="Name">Name</label>
-      <input id="Name" type="text" name="Name">
+        <label for="Message">Message</label>
+        <textarea id="Message" name="Message"></textarea>
 
-      <label for="City">Family</label>
-      <input id="City" type="text" name="Family">
+        <label>Select label</label>
+        <select id="lorem" name="Lorem ipsum">
+          <option selected="selected" value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+          <option value="5">Five</option>
+        </select>
 
-      <label for="Email">Email</label>
-      <input id="Email" type="text" name="Email">
+        <label>Number</label>
+        <input type="radio" name="radioSet" value="uno">Option One
+        <input type="radio" name="radioSet" value="due">Option Two
+        <input type="radio" name="radioSet" value="tre">Option Three
 
-      <label for="Message">Message</label>
-      <textarea id="Message" name="Message"></textarea>
+        <button>Button</button>
 
-      <label>Select label</label>
-      <select id="lorem" name="Lorem ipsum">
-        <option selected="selected" value="1">One</option>
-        <option value="2">Two</option>
-        <option value="3">Three</option>
-        <option value="4">Four</option>
-        <option value="5">Five</option>
-      </select>
+        <input type="button" value="Input Button">
+        <input type="submit" value="Input Submit">
+        <input type="reset" value="Input Reset">
+      </form>
+    </section>
 
-      <label>Number</label>
-      <input type="radio" name="radioSet" value="uno">Option One
-      <input type="radio" name="radioSet" value="due">Option Two
-      <input type="radio" name="radioSet" value="tre">Option Three
-
-      <button>Button</button>
-
-      <input type="button" value="Input Button">
-      <input type="submit" value="Input Submit">
-      <input type="reset" value="Input Reset">
-    </form>
   </main>
 
   <hr>
@@ -300,7 +184,10 @@
   <footer>
     <p>
       <small>
-        <a href="//oinam.github.io/css-zero/">CSS-Zero</a>, <a href="//github.com/oinam/css-zero">Open Source</a>. License - MIT.
+        <a href="https://oinam.github.io/css.sink/">CSS Sink</a>
+        -
+        <a href="https://github.com/oinam/css.sink">Open Source</a>.
+        License - MIT.
       </small>
     </p>
   </footer>
