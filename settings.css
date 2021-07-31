@@ -4,13 +4,20 @@
   --body-width: 48rem;
 
   /* text and type */
-  --font-family: var(--font-family-serif);
+  --font-family: 'Libre Baskerville', var(--font-family-sans);
   --font-family-headings: var(--font-family);
-  --font-size: 18px;
+  --font-size: 16px;
   --line-height: 1.6;
   --line-height-heading: 1.2;
 
+  /* Default: Minor third scale progression*/
+  --typescale-body: 1.2;
+
+  /* Headings:  Major third scale progression*/
+  --typescale-heading: 1.25;
+
   /* spacings */
+  --spacing-heading: 1rem;
 
   /* lines, borders */
   --border-radius: 0.25rem;
@@ -18,18 +25,26 @@
   
 }
 
+@media (prefers-color-scheme: dark) {
+  img, video {
+    opacity: .6;
+  }
+}
+
 /*
   THEMES
-  Themes are set and mostly color driven
+  Themes are set and mostly color driven.
  */
 
 :root {
   color-scheme: light dark;
 
-  --background-color: #fff;
-  --highlighted-background-color: #f5f5f5;
+  --background-color: var(--color-light);
+  --background-color-accent: var(--color-gray-3);
+  --background-color-highlight: var(--background-color-accent);
   
-  --text-color: #363636;
+  --text-color: var(--color-dark);
+  --text-color-light: var(--color-gray-4);
   --danger-color: #f14668;
   --danger-text-color: #fff;
   --danger-hover-color: #f03a5f;
@@ -41,14 +56,22 @@
   
   --border-color: #dbdbdb;
   --border-hover-color: #b5b5b5;
-  
-  --code-text-color: #f14668;
-  --code-background-color: #f5f5f5;
 
-  --link-color: #3273dc;
-  --link-visited-color: #b86bff;
-  --link-hover-color: #363636;
-  --link-active-color: #363636;
+  --color-mark: var(--background-color-highlight);
+  
+  --pre-text-color: var(--text-color);
+  --pre-background-color: var(--background-color-highlight);
+
+  --text-color-link: var(--text-color-link);
+  --text-color-link-visited: var(--text-color-link);
+  --text-color-link-hover: var(--text-color-link-hover);
+  --text-color-link-active: var(--text-color-link-hover);
+
+  --form-button-text-color: var(--color-black);
+  --form-button-background-color: var(--color-accent);
+  --form-button-background-color-disabled: var(--color-light);
+  --form-button-text-color-active: var(--color-black);
+  --form-button-background-color-active: var(--color-accent-dark);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,8 +92,8 @@
     
     --border-color: #5f6267;
     --border-hover-color: #bcbebd;
-    --code-text-color: #f1a0b0;
-    --code-background-color: #292b2e;
+    --pre-text-color: #f1a0b0;
+    --pre-background-color: #292b2e;
     
     --link-color: #90b3ed;
     --link-visited-color: #cb93ff;

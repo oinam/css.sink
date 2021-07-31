@@ -1,29 +1,26 @@
 table {
-  display: block;
-  overflow-x: auto;
   border-collapse: collapse;
+  width: 100%;
+  margin: 1.5rem 0;
 }
 
-caption {
+td,
+th {
+  border: 1px solid var(--border-color);
+  text-align: left;
+  padding: .5rem;
+}
+
+th {
+  background: var(--background-color-accent);
   font-weight: bold;
 }
 
-thead {
-  border-bottom: calc(var(--border-width) * 2) solid var(--border-color);
+tr:nth-child(even) {
+  background: var(--background-color-accent);
 }
 
-tfoot {
-  border-top: calc(var(--border-width) * 2) solid var(--border-color);
-}
-
-thead > tr:not(:first-child),
-tbody > tr:not(:first-child),
-tfoot > tr:not(:first-child) {
-  border-top: var(--border-width) solid var(--border-color);
-}
-
-thead > tr:nth-child(even),
-tbody > tr:nth-child(even),
-tfoot > tr:nth-child(even) {
-  background-color: var(--highlighted-background-color);
+table caption {
+  font-weight: bold;
+  margin-bottom: .5rem;
 }

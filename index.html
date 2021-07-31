@@ -8,7 +8,16 @@
 <meta name="description" content="A simple bare-bone classless CSS defaults.">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<link rel="stylesheet" href="var-ratio.css">
+<!--
+  Fonts for Test.
+  Try to avoid non-system fonts as much as you can.
+  Limit the number of external fonts.
+  Rememebr to combine the styles too.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="var-color-gray.css">
 <link rel="stylesheet" href="var-color-nord.css">
 <link rel="stylesheet" href="var-color.css">
@@ -49,7 +58,7 @@
       </p>
 
       <figure>
-        <img src="lotr-middle-earth-map.jpg" alt="Middle Earth">
+        <img src="http://placeimg.com/640/480/any" alt="An Image in a FIGURE">
         <figcaption>
           Here goes the caption of the above image.
           <cite>The Creator</cite>
@@ -68,7 +77,29 @@
       </blockquote>
     </article>
 
-    <img src="color-theme-nord.png" alt="Nord Color Theme">
+    <article>
+      <h1>Long Heading Coming up to test how it wraps and an effective line-height is set for it</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+      </p>
+      <pre>
+        <code>
+          input[type="radio"]:checked::after {
+            content: ' ';
+            width: .25em;
+            height: .25em;
+            border-radius: 100%;
+            position: absolute;
+            top: 0.125em;
+            background: var(--background-color);
+            left: 0.125em;
+            font-size: 32px;
+          }
+        </code>
+      </pre>
+    </article>
+
+    <img src="http://placeimg.com/800/600/any" alt="An Image">
 
     <section>
       <h2>Ring Bearers</h2>
